@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/todos', require('./routes/todoRoutes'))
 //app.use('/api/goals', require('./routes/goalRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
+app.use('/form', require('./routes/formRoutes'));
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'login.html'));
 });
